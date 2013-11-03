@@ -1,24 +1,65 @@
 <!DOCTYPE html>
-<html lang="" ng-app>
+<html lang="en" ng-app>
 	<head>  
 		<meta charset="utf-8">
-		<title>Demo</title>
+		<title>Behancio</title>
 		<meta name="description" content="" />  
 		<meta name="keywords" content="" />
 		<meta name="robots" content="" />
-		<script type="text/javascript" src="js/lib/angular.min.js"></script>
-		<link rel="stylesheet" href="stylesheets/normalize.min.css">
-		<link rel="stylesheet" href="stylesheets/app.min.css">
+		<script type="text/javascript" src="libraries/js/angular/angular.min.js"></script>
+		<link rel="stylesheet" href="assets/stylesheets/normalize.min.css">
+		<link rel="stylesheet" href="assets/stylesheets/app.min.css">
+		<link rel="stylesheet" href="assets/stylesheets/custom.css">
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
 		<header>
-			
+			<div class="row">
+				<div class="large-12 columns">
+					<h1 class="text-center">Behancio</h1>
+				</div>
+			</div>
 		</header>
-		<section>
-			<h1>Welcome {{name}}!</h1>
-			<input placeholder="type your name..." ng-model="name" />
+
+
+		<section id="content">
+            <div class="row">
+                <div class="large-6 columns right1">
+                    <br/>
+                    <input placeholder="type your name..." ng-model="name" />
+                </div>
+                <div class="large-6 columns left1">
+                    <h3>Welcome {{name}}!</h3>
+                </div>
+            </div>
+
 		</section>
-		<footer></footer>
+
+
+
+
+
+        <!-- ============== VIEWER ================ -->
+        <section class="viewer">
+
+            <div id="behance" class="row"></div>
+            <script>var BEHANCE_USER = "enokmadrid";</script>
+            <script src="controllers/behance.js" async></script>
+
+        </section>
+        <!-- ============== VIEWER ================ -->
+
+
+
+
+        <!-- ============== FOOTER ================ -->
+		<footer>
+
+		</footer>
+        <!-- ============== FOOTER ================ -->
+
+
+
+
 	</body>
 </html>

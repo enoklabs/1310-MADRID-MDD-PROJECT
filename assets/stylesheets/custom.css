@@ -1,0 +1,23 @@
+header{
+	background: #dedec5;
+}
+.right1{
+    background: #16a085;
+}
+.left1{
+    background: #1abc9c;
+}
+#content{
+    background: #138a72;
+
+}
+.form {
+    background: #fbfcfc;
+}
+.form i{
+    color: #8C9899;
+    font-size: small;
+}
+.viewer{
+    background: #fcfcfc;
+}
