@@ -1,18 +1,30 @@
+h1, h2, h3, h4, h5, h6, p,
+textarea, label, a, span,
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"]{
+	font-family: 'Lato', 'Arial', serif;
+}
+li{
+    list-style: none;
+}
 header{
-	background: #dedec5;
-}
-.right1{
-    background: #16a085;
-}
-.left1{
-    background: #1abc9c;
-}
-#content{
-    background: #138a72;
-
+    background: #dde9ec;
+    height: 75px;
 }
 .form {
     background: #fbfcfc;
+    padding: 20px;
 }
 .form i{
     color: #8C9899;
@@ -21,3 +33,88 @@ header{
 .viewer{
     background: #fcfcfc;
 }
+.top-bar{
+    background: #ecf0f1;
+    height: 72px;
+}
+
+/*********** COLORS ************/
+.greenDark{
+    color: #16a085;
+}
+.greenLight{
+    color: #1abc9c;
+}
+.blueDark{
+    color: #2c3e50;
+}
+.blueNormal{
+    color: #34495e;
+}
+.blueLight{
+    color: #6084a9;
+}
+.grayDark{
+    color: #7f8c8d;
+}
+.greyNormal{
+    color: #bdc3c7;
+}
+.greyLight{
+    color: #ecf0f1;
+}
+a{
+    color: #16a085;
+}
+a:hover{
+    color: #1abc9c;
+}
+
+
+/*********** PROJECT LISTING ************/
+.listing{
+    background: #ecf0f1;
+}
+.list-title > h5{
+    margin: 0;
+    color: #16a085;
+}
+.list-title > span{
+    margin: 0;
+    font-size: 13px;
+    color: #bdc3c7;
+}
+.list-footer{
+    background: #2c3e50;
+    border-radius: 0 0 5px 5px;
+}
+.left > span{
+    color: #16a085;
+}
+li.left{
+    padding-left: 20px;
+}
+.fa{
+    padding-right: 5px;
+}
+.list-container{
+	background: #ffffff;
+    border-radius: 5px;
+    margin: 40px 0;
+}
+.row.collapse{
+    padding: 20px 10px 0 10px;
+    font-size: 14px;
+}
+.list-title{
+    padding: 10px;
+}
+.shadow{
+    -moz-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.20);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.20);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.20);
+}
+i{
+    color: #16a085;
+}
+/*********** PROJECT LISTING ************/

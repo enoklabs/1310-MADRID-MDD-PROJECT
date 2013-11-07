@@ -12,7 +12,7 @@
         if (e.responseStatus === 200) {
             var title = e.responseData.feed.title;
 
-            title = '<a href="http://be.net/' + BEHANCE_USER + '"><img src="http://assets.behance.net/img/portfolio/badges/badges/be-badge-small.png"></a>' + title;
+            title = '<a href="http://be.net/' + BEHANCE_USER + '"><img src="http://behance.vo.llnwd.net/profiles14/1199037/50xc63e419d5ff4ddc04096e35a31faa92b.jpg"><h3 style="color: #1abc9c;">' + title + '</h3></a>';
 
             var link = e.responseData.feed.link;
             var body = "";
@@ -30,7 +30,7 @@
                 body += "<div class='behance_entry'><a href='" + entry.link + "' class='titleLink'>" + entry.title + "</a><br/><p>" + content + "</p></div>";
             }
 
-            var result = "<div class='behance_main'><div class='behance_title'>" + title + "</div>";
+            var result = "<div class='behance_main large-centered columns'><div class='behance_title'>" + title + "</div>";
             result += "<div class='behance_entries'>" + body + "</div></div>";
             d.innerHTML = result;
         } else {
@@ -51,6 +51,6 @@
     //append CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = "div.behance_entry { clear:both; } div.behance_main { border-style:solid; border-width:thin; width: 250px; } div.behance_entry { padding-bottom: 10px; } div.behance_title { margin-left: auto; margin-right: auto; width: 100%; font-weight: bold; text-align: center; background-color: black; color: white; padding-top: 5px; padding-bottom: 5px; } div.behance_entry a.titleLink {display:block; text-align: center; margin-bottom: -25px; } div.behance_entry img { display: block; margin-left: auto; margin-right: auto; margin-bottom: -10px; } div.behance_entry p { margin-left: auto; margin-right: auto; display:block; width: 202px; } div.behance_main a { text-decoration: none; font-weight: bold;} div.behance_main { font-size: 0.8em; font-family: Arial; } div.behance_title img { margin-top: auto; margin-bottom: auto; margin-left: 10px; float: left; }";
+    css.innerHTML = "div.behance_entry { clear:both; } div.behance_main { background: #ecf0f1; width: 250px; } div.behance_entry { padding-bottom: 10px; } div.behance_title { margin-left: auto; margin-right: auto; margin-bottom: 20px; width: 100%; height: 60px; font-weight: bold; text-align: center; background-color: #34495e; color: #1abc9c; padding-top: 5px; padding-bottom: 5px; } div.behance_entry a.titleLink {display:block; text-align: center; margin-bottom: -25px; } div.behance_entry img { display: block; margin-left: auto; margin-right: auto; margin-bottom: -10px; } div.behance_entry p { margin-left: auto; margin-right: auto; display:block; width: 202px; } div.behance_main a { text-decoration: none; font-weight: bold;} div.behance_main { font-size: 0.8em; font-family: Arial; } div.behance_title img { margin-top: auto; margin-bottom: auto; margin-left: 10px; float: left; }";
     document.body.appendChild(css);
 }());
