@@ -13,9 +13,30 @@ input[type="search"],
 input[type="tel"],
 input[type="time"],
 input[type="url"]{
-	font-family: 'Lato', Arial;
+	font-family: 'Lato', 'Arial', serif;
 }
-
+li{
+    list-style: none;
+}
+header{
+    background: #dde9ec;
+    height: 75px;
+}
+.form {
+    background: #fbfcfc;
+    padding: 20px;
+}
+.form i{
+    color: #8C9899;
+    font-size: small;
+}
+.viewer{
+    background: #fcfcfc;
+}
+.top-bar{
+    background: #ecf0f1;
+    height: 72px;
+}
 
 /*********** COLORS ************/
 .greenDark{
@@ -48,37 +69,6 @@ a{
 a:hover{
     color: #1abc9c;
 }
-/*********** COLORS ************/
-
-
-li{
-	list-style: none;
-}
-header{
-	background: #dde9ec;
-	height: 75px;
-}
-.form {
-    background: #fbfcfc;
-    padding: 20px;
-}
-.form i{
-    color: #8C9899;
-    font-size: small;
-}
-.viewer{
-    background: #fcfcfc;
-}
-.top-bar{
-	background: #ecf0f1;
-	height: 72px;
-}
-
-
-
-
-
-
 
 
 /*********** PROJECT LISTING ************/
