@@ -10,7 +10,7 @@ Welcome to the Behancio GitHub Repo!
 This Web App features the Behance API, it allows users to view the some of the best design portfolios hosted by Behance.net members from around the world!
 
 
-
+=
 **Log Book**
 
 [1.2] Initialization
