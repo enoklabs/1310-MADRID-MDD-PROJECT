@@ -117,4 +117,65 @@ li.left{
 i{
     color: #16a085;
 }
+
+
+
+/*********** PROJECT DETAILS ************/
+
+.detail{
+	max-width: 100%;
+	background: #ffffff;
+}
+.detail-header{
+	padding: 30px 0;
+}
+.detail-user{
+	background: #2c3e50;
+	color: #6084a9;
+}
+.detail h1, .detail h2, .detail h3{
+	color: #16a085;
+	margin: 0;
+}
+.detail a{
+	font-size: 14px;
+}
+.avt{
+	border-radius: 100px;
+}
+.statistics i{
+	color: #6084a9;
+}
+.statistics span{
+	text-align: right;
+	font-size: large;
+}
+.statistics{
+	background: #34495e;
+	margin: 15px;
+	padding: 15px;
+}
+.statistics div.collapse{
+	padding: 18px;
+}
+.sub-title{
+	font-size: small;
+	font-weight: 300;
+	padding-top: 25px;
+	margin-bottom: 8px;
+}
+.about-paragraph{
+	font-weight: 300;
+}
+.tags{
+	padding-bottom: 50px;
+}
+.viewer{
+	background: #f9f9f9;
+}
+.viewer h2{
+	text-align: center;
+	padding: 100px 0;
+}
+
 /*********** PROJECT LISTING ************/
