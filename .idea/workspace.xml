@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="974f6817-4bb2-463a-a113-562e2dba4565" name="Default" comment="" />
+    <list default="true" id="974f6817-4bb2-463a-a113-562e2dba4565" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
     <ignored path="-1310-MADRID-MDD-PROJECT.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,6 +43,15 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="43" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.46979865" vertical-offset="0" max-vertical-offset="894">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="listing.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/listing.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -50,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="77" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.85764295" vertical-offset="0" max-vertical-offset="1950">
+            <state line="15" column="10" selection-start="773" selection-end="773" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1950">
               <folding />
             </state>
           </provider>
@@ -77,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/views/main.tpl" />
         <option value="$PROJECT_DIR$/views/signin.tpl" />
         <option value="$PROJECT_DIR$/controllers/core.js" />
         <option value="$PROJECT_DIR$/views/signup.tpl" />
@@ -93,6 +103,7 @@
         <option value="$PROJECT_DIR$/views/listing.html" />
         <option value="$PROJECT_DIR$/controllers/config.js" />
         <option value="$PROJECT_DIR$/views/detail.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -357,7 +368,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="77" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.85764295" vertical-offset="0" max-vertical-offset="1950">
+        <state line="15" column="10" selection-start="773" selection-end="773" vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="1950">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="43" selection-start="1054" selection-end="1054" vertical-scroll-proportion="0.46979865" vertical-offset="0" max-vertical-offset="894">
           <folding />
         </state>
       </provider>
