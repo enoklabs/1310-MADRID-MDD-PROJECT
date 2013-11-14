@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" ng-app>
-	<head>  
-		<meta charset="utf-8">
-		<title>Behancio App</title>
-		<meta name="description" content="" />  
-		<meta name="keywords" content="" />
-		<meta name="robots" content="" />
-		<script type="text/javascript" src="libraries/angular/angular.min.js"></script>
-		<link rel="stylesheet" href="../assets/stylesheets/normalize.min.css">
-		<link rel="stylesheet" href="../assets/stylesheets/app.min.css">
-		<link rel="stylesheet" href="../assets/stylesheets/custom.css">
-		<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
 
-
-		<header>
-			<nav class="top-bar">
-				<div class="large-8 small-5 small-centered columns">
-					<h2 class="logo">
-                        <a href="../index.html"><img src="../assets/images/logo.png"/></a>
-					</h2>
-				</div>
-			</nav>
-		</header>
-	
-	
-	
-	
 		<!-- ============== SIGNUP ================ -->
 		<section class="form">
 		    <div class="row">
@@ -64,7 +35,3 @@
 		    </div>
 		</section>
 		<!-- ============== SIGNUP ================ -->
-
-
-	</body>
-</html>
