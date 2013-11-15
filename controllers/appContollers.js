@@ -13,6 +13,13 @@ app.controller('CtrlCore', ['$scope', function($scope){
         }, 'JSONP');
     }
 
+
+    $scope.init = function(){
+
+        $http.jsonp($scope.baseURL + 'users/' + $scope.user + '/projects?api_key=' + $scope.apiKey + '&callback=?');
+    };
+
+
 }]);
 
 /*
@@ -53,7 +60,7 @@ app.controller('SignInCtrl', ['$scope', function($scope){
 
 }]);
 
-//controller for Sign In Page
+//controller for Sign Up Page
 app.controller('SignUpCtrl', ['$scope', function($scope){
 
 }]);
