@@ -20,6 +20,7 @@ This Web App features the Behance API, it allows users to view the some of the b
 - Made sure the colors, fonts and, layouts are congruent to the style tiles
 - Design the signup and sign in forms
 - Linked the Font Awesome css icon library for main icons
+
 =
 
 
@@ -29,5 +30,6 @@ This Web App features the Behance API, it allows users to view the some of the b
 - Sign Up page and Sign In page views have been added
 - Project Detail page has been added
 - Main links menu has been added to header
+
 =
 
