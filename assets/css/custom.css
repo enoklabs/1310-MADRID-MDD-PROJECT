@@ -20,7 +20,6 @@ li{
 }
 header{
     background: #dde9ec;
-    height: 75px;
 }
 .form {
     background: #fbfcfc;
@@ -34,9 +33,22 @@ header{
     background: #fcfcfc;
 }
 .top-bar{
-    background: #ecf0f1;
-    height: 72px;
+    /*background: #ecf0f1;*/
+    height: 62px;
 }
+.top-bar.expanded{
+    background: #34495E;
+}
+.title-area{
+    height: 62px;
+}
+.top-bar-section ul, .top-bar-section ul li > a {
+    box-shadow: none;
+}
+.top-bar-section ul li > a, .top-bar-section ul li > a:hover {
+    height: 62px;
+}
+
 
 /*********** COLORS ************/
 .greenDark{
@@ -170,7 +182,7 @@ i{
 .about-paragraph{
 	font-weight: 300;
 }
-.tags{
+.tags2{
 	padding-bottom: 50px;
 }
 .viewer{
@@ -183,6 +195,5 @@ i{
 .small-7.columns > span{
     padding-left: 10px;
 }
-
 
 /*********** PROJECT LISTING ************/

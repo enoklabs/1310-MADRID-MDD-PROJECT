@@ -1,0 +1,81 @@
+<div class="row" data-ng-app="BehancioApp" data-ng-controller="CoreCtrl" data-ng-init="getProjects()" ></div>
+
+<section class="listing">
+
+    <div class="row left-align">
+
+
+            <div class="large-4 large-uncentered  small-centered columns" data-ng-repeat="project in list.projects">
+                <div class="list-container shadow">
+
+                    <a href="#/detail/{{project.id}}">
+                        <div class="list-title">
+                            <h5>{{project.title}}</h5>
+                            <span>by {{project.user.name}}</span>
+                        </div>
+                        <div class="list-img">
+                            <img src="assets/images/sample.jpg"/>
+                        </div>
+                    </a>
+
+                    <div class="list-footer">
+                        <div class="row collapse">
+                            <div class="tags large-4 small-4 columns">
+                                <a href="#">{{project.tag}}</a>
+                            </div>
+                            <div class="tags large-8 small-8 columns">
+                                <ul class="right">
+                                    <li class="left"><i class="fa fa-eye"></i><span>{{project.views_count}}</span></li>
+                                    <li class="left"><i class="fa fa-heart"></i><span>{{project.likes_count}}</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </div>
+
+</section>
+
+
+
+<br/><br/><br/><br/><br/>
+<h4 class="text-center">TEMPORARY STATIC PROJECT LISTING BELOW</h4>
+<br/><br/><br/><br/><br/>
+
+
+        <!-- ============== PORTFOLIO LISTING ================ -->
+		<section class="listing">
+            <div class="row left-align">
+                <div class="large-4 large-uncentered  small-centered columns">
+                    <div class="list-container shadow">
+
+                        <a href="#/detail">
+                            <div class="list-title">
+                                <h5>Project Title</h5>
+                                <span>by Enok Madrid</span>
+                            </div>
+                            <div class="list-img">
+                                <img src="assets/images/sample.jpg"/>
+                            </div>
+                        </a>
+                    	<div class="list-footer">
+	                    	<div class="row collapse">
+		                    	<div class="tags large-4 small-4 columns">
+			                    	<a href="#">Illustration</a>
+		                    	</div>
+		                    	<div class="tags large-8 small-8 columns">
+			                    	<ul class="right">
+				                    	<li class="left"><i class="fa fa-eye"></i><span>340</span></li>
+				                    	<li class="left"><i class="fa fa-heart"></i><span>197</span></li>
+			                    	</ul>
+		                    	</div>
+	                    	</div>
+                    	</div>	                   
+                    </div>
+                </div>
+            </div>
+		</section>
