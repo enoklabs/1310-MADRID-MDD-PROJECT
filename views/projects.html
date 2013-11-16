@@ -1,11 +1,11 @@
-<div class="row" ng-app="AppCore" ng-controller="CoreCtrl" ng-init="getProjects()" ></div>
+<div class="row" data-ng-app="BehancioApp" data-ng-controller="CoreCtrl" data-ng-init="getProjects()" ></div>
 
 <section class="listing">
 
     <div class="row left-align">
 
 
-            <div class="large-4 large-uncentered  small-centered columns" ng-repeat="project in list.projects">
+            <div class="large-4 large-uncentered  small-centered columns" data-ng-repeat="project in list.projects">
                 <div class="list-container shadow">
 
                     <a href="#/detail/{{project.id}}">

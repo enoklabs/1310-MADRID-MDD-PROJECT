@@ -9,7 +9,7 @@ controllers.controller('CoreCtrl', ['$scope', function($scope, $resource, $http)
     $scope.apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
 
 
-        console.log($http.jsonp($scope.baseURL + 'users/' + $scope.user + '/projects?api_key=' + $scope.apiKey + '&callback=?'));
+    console.log($http.jsonp($scope.baseURL + 'users/' + $scope.user + '/projects?api_key=' + $scope.apiKey + '&callback=?'));
 
 
 }]);

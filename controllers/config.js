@@ -1,7 +1,7 @@
 var app = angular.module('BehancioApp',
         [
             'ngResource',
-            'AppCore.controllers'
+            'BehancioApp.controllers'
         ])
     .config(['$routeProvider', function(routes){
 
