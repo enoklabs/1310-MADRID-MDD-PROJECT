@@ -1,11 +1,11 @@
-var app = angular.module('AppCore', [
-        'AppCore.controllers'
-    ]);
+var app = angular.module('BehancioApp',
+        [
+            'ngResource',
+            'AppCore.controllers'
+        ])
+    .config(['$routeProvider', function(routes){
 
-    app.config(['$routeProvider', function(r){
-
-        // Routes
-        r
+        routes
             .when('/',{
                 templateUrl : 'views/main.html'
             })
@@ -13,9 +13,9 @@ var app = angular.module('AppCore', [
                 templateUrl : 'views/detail.html',
                 controller  : 'DetailCtrl'
             })
-            .when('/listing', {
-                templateUrl : 'views/listing.html',
-                controller  : 'ProjectsCtrl'
+            .when('/projects', {
+                templateUrl : 'views/projects.html',
+                controller  : 'CoreCtrl'
             })
             .when('/signin', {
                 templateUrl : 'views/signin.tpl',
@@ -28,4 +28,35 @@ var app = angular.module('AppCore', [
             .otherwise({
                 redirectTo  : '/'
             })
-    }])
+    }]);
+
+
+//version one
+/*
+app.controller('SimpleController', function($scope){
+    $scope.customers = [
+        {name: 'John Smith', city: 'Phoenix'},
+        {name: 'Sean Doe'  , city: 'New York'},
+        {name: 'Jane Doe'  , city: 'San Francisco'}
+    ];
+});
+*/
+
+
+//version two
+/*
+var controllers = {};
+controllers.SimpleController = function($scope){
+    $scope.customers = [
+        {name: 'John Smith', city: 'Phoenix'},
+        {name: 'Sean Doe'  , city: 'New York'},
+        {name: 'Jane Doe'  , city: 'San Francisco'}
+    ];
+};
+
+controllers.SimpleController2 = function($scope){
+    //code
+};
+
+*/
+

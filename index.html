@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="AppCore">
+<html lang="en" data-ng-app="BehancioApp">
 	<head>  
 		<meta charset="utf-8">
 		<title>Behancio App</title>
@@ -17,20 +17,21 @@
         <!-- Custom CSS -->
 		<link rel="stylesheet" href="assets/css/custom.css">
 
-        <!-- Font Awesome CDN -->
+        <!-- Font Awesome -->
 		<link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
 
         <!-- Google Font-Family: Lato -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-        <!-- Angular CDN -->
+        <!-- Angular JS -->
         <script type="text/javascript" src="libraries/angular/angular.min.js"></script>
+        <script type="text/javascript" src="libraries/angular/angular-resource.min.js"></script>
 
         <!-- App Configuration and Controllers -->
         <script type="text/javascript" src="controllers/config.js"></script>
         <script type="text/javascript" src="controllers/appContollers.js"></script>
 
-        <!-- Modernizer CDN -->
+        <!-- Modernizer JS -->
         <script src="assets/js/vendor/custom.modernizr.js"></script>
 
     </head>
@@ -41,15 +42,15 @@
 		<header>
             <nav class="top-bar">
                 <ul class="title-area">
-                    <div class="name">
+                    <li class="name">
                         <a href="#"><img class="logo" src="assets/images/logo.png"/></a>
-                    </div>
+                    </li>
                     <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
                 </ul>
 
                 <section class="top-bar-section">
                     <ul class="right">
-                        <li><a href="#/listing">Top 10 Portfolios</a></li>
+                        <li><a href="#/projects">Top 10 Portfolios</a></li>
                         <li><a href="views/apiProof.html">Behance Api Connection</a></li>
                         <li><a href="#/signin">Sign In</a></li>
                         <li><a href="#/signup">Sign Up</a></li>
@@ -62,7 +63,7 @@
 
 
 <!-- ========= NG VIEWS GO HERE =========== -->
-        <div ng-view></div>
+        <div data-ng-view=""></div>
 <!-- ========= NG VIEWS GO HERE =========== -->
 
 

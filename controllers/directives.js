@@ -6,7 +6,7 @@ directives.directive('ProjectsList', function () {
   return {
     restrict: 'A',
     replace: true,
-    templateUrl: "views/listing.html",
+    templateUrl: "views/projects.html",
     scope: {
       projects: "=ProjectsList"
     }
