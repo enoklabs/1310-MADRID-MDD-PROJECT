@@ -24,13 +24,18 @@ app.config(function($routeProvider){
             templateUrl : 'views/signup.tpl',
             controller  : 'SignUpCtrl'
         })
+        .when('/test', {
+            templateUrl : 'views/apiTest.html',
+            controller  : 'BehanceController'
+        })
         .otherwise({
             redirectTo  : '/'
         })
 });
 
 
-//FACTORY SAMPLE
+
+//FACTORY SAMPLE for USERS
 app.factory('usersFactory', function(){
     var factory = {};
     var users = [
@@ -44,33 +49,55 @@ app.factory('usersFactory', function(){
 
         //I can make the HTTP calls here
         console.log(users);
-
         return users;
     };
-
 
     return factory;
 });
 
+
+
+
 //FACTORY for BEHANCE SERVICES
-app.factory('behanceData', function($http, $log){
+app.factory('behanceData', function($http, $log, $q){
 
-    $scope.title   = 'Behancio App';
-    $scope.baseURL = 'http://www.behance.net/v2/';
-    $scope.user    = 'enokmadrid';
-    $scope.apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
+    var factory = {},
+        userProjects = [],
+        baseURL = 'http://www.behance.net/v2/',
+        user    = 'EnokMadrid',
+        apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
 
-    return{
-        getProjects: function(successcb){
+    factory.getProjects = function(successcb){
 
-            $http({method: 'GET', url: 'http://www.behance.net/v2/users/enokmadrid/projects?api_key=wXg9JwtvGepF60zwE9f0t20YN4TGKxYc&callback=?'}).
-                success(function(data){
-                    successcb(data);
+        $http({method: 'GET', url: baseURL + 'users/' + user + '/projects?api_key=' + apiKey}).
+
+            success(function(data){
+                successcb(data);
+                userProjects = data;
             }).
             error(function (data){
                 $log.warn(data);
             });
-        }
-
+        console.log(userProjects);
+        return userProjects;
     };
+
+    return factory;
+
+
+/*  Alternative $http connection using the $q service
+
+    return{
+        get: function(){
+            var dfd = $q.defer();
+            $http.get('http://www.behance.net/v2/users/EnokMadrid/projects?api_key=wXg9JwtvGepF60zwE9f0t20YN4TGKxYc')
+                .success(function(data){
+                   dfd.resolve(data);
+                    console.log(data);
+                });
+            return dfd.promise;
+        }
+    }
+*/
+
 });

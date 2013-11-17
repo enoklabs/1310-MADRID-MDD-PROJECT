@@ -1,4 +1,4 @@
-
+//All controllers will be added to this empty object
 var controllers = {};
 
 //Core Controller
@@ -8,26 +8,26 @@ controllers.CoreCtrl = ['$scope', function($scope, $resource, $http){
     $scope.user    = 'enokmadrid';
     $scope.apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
 
-/*
-    console.log($http.jsonp($scope.baseURL + 'users/' + $scope.user + '/projects?api_key=' + $scope.apiKey + '&callback=?'));
-*/
-
+/*console.log($http.jsonp($scope.baseURL + 'users/' + $scope.user + '/projects?api_key=' + $scope.apiKey + '&callback=?'));*/
 }];
 
 
 
-
-//sample users controller
-controllers.UsersController = function($scope, usersFactory){  //usersFactory is added to pull users from Factory
+//usersFactory is added to pull users from Factory
+controllers.UsersController = function($scope, usersFactory){
     $scope.users = [];
 
+    //initialize function
     init();
 
+    //all other functions go inside this initialization function
     function init(){
         $scope.users = usersFactory.getUsers();
+        //more functions can go here
     };
 
-    $scope.addCustomer = function(){
+    //addUser() pushes the new user info into the users object array
+    $scope.addUser = function(){
         $scope.users.push(
             {
                 name: $scope.newUser.name,
@@ -38,16 +38,19 @@ controllers.UsersController = function($scope, usersFactory){  //usersFactory is
 
 
 
-
-
 //controller to get behance data
 controllers.BehanceController = function($scope, behanceData){
+
     behanceData.getProjects(function(project){
         $scope.projects = project;
     });
+
+/*
+    Alternative $http connection using the $q service
+    $scope.behanceData = behanceData.get();
+*/
+
 };
-
-
 
 
 
@@ -56,7 +59,6 @@ controllers.ProjectsCtrl = function($scope, PagedResult, $routeParams){
     var list = $routeParams.list;
     $scope.list = $routeParams.list;
 };
-
 
 
 
@@ -80,27 +82,5 @@ controllers.SignUpCtrl = ['$scope', function($scope){
 }];
 
 
-
+//passes all the above controller's objects into the app's main controller
 app.controller(controllers);
-
-
-// Core shared controller
-/*
- app.controller('CtrlCore', ['$scope', function($scope){
-
-
- function getProjects(user, cb){
- var url = $scope.baseURL + 'users/' +  $scope.user + '/projects?api_key=' + $scope.apiKey + '&callback=?';
- $.get(url, {}, function(res, code){
- cb(res.projects);
- }, 'JSONP');
- }
-
- $scope.init = function(){
- $http.jsonp($scope.baseURL + 'users/' + $scope.user + '/projects?api_key=' + $scope.apiKey + '&callback=?');
- };
-
-
- }]);
- */
-
