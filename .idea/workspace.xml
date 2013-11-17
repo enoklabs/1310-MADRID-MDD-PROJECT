@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="974f6817-4bb2-463a-a113-562e2dba4565" name="Default" comment="">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/controllers/app.js" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/appContollers.js" afterPath="$PROJECT_DIR$/js/appContollers.js" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/behance.js" afterPath="$PROJECT_DIR$/js/behance.js" />
@@ -11,6 +12,14 @@
       <change type="MOVED" beforePath="$PROJECT_DIR$/controllers/services.js" afterPath="$PROJECT_DIR$/js/services.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libraries/angular/angular.min.js" afterPath="$PROJECT_DIR$/libraries/angular/angular.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/apiProof.html" afterPath="$PROJECT_DIR$/views/apiProof.html" />
+||||||| merged common ancestors
+      <change type="MOVED" beforePath="$PROJECT_DIR$/libraries/js/angular/angular-resource.min.js" afterPath="$PROJECT_DIR$/libraries/angular/angular-resource.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/libraries/js/angular/angular.min.js" afterPath="$PROJECT_DIR$/libraries/angular/angular.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/libraries/js/jquery/jquery-2.0.3.min.js" afterPath="$PROJECT_DIR$/libraries/jquery/jquery-2.0.3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/behance.js" afterPath="$PROJECT_DIR$/controllers/behance.js" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/css/ie10viewport.css" />
+>>>>>>> master
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/projects.html" afterPath="$PROJECT_DIR$/views/projects.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -39,7 +48,13 @@
       <file leaf-file-name="appConfig.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/appConfig.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="39" column="54" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
+||||||| merged common ancestors
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="90">
+=======
+            <state line="39" column="54" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="858" max-vertical-offset="1782">
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -48,16 +63,28 @@
       <file leaf-file-name="appContollers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/appContollers.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="19" column="15" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="286" max-vertical-offset="2464">
+||||||| merged common ancestors
+            <state line="20" column="59" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+=======
+            <state line="19" column="15" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="418" max-vertical-offset="2464">
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="1" column="37" selection-start="53" selection-end="53" vertical-scroll-proportion="16.32258" vertical-offset="528" max-vertical-offset="1980">
+||||||| merged common ancestors
+            <state line="44" column="20" selection-start="1307" selection-end="1482" vertical-scroll-proportion="-14.375" vertical-offset="315" max-vertical-offset="1050">
+=======
+            <state line="77" column="47" selection-start="2741" selection-end="2741" vertical-scroll-proportion="0.27529413" vertical-offset="1460" max-vertical-offset="2310">
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -66,7 +93,13 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/main.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="14" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="-9.935484" vertical-offset="0" max-vertical-offset="440">
+||||||| merged common ancestors
+            <state line="2" column="55" selection-start="142" selection-end="142" vertical-scroll-proportion="0.04037685" vertical-offset="0" max-vertical-offset="743">
+=======
+            <state line="14" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="440">
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -75,16 +108,58 @@
       <file leaf-file-name="filters.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/filters.js">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="8" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
+||||||| merged common ancestors
+            <state line="20" column="8" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+=======
+            <state line="8" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="176" max-vertical-offset="308">
+>>>>>>> master
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="projects.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/projects.html">
+||||||| merged common ancestors
+      <file leaf-file-name="app.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/stylesheets/app.min.css">
+=======
+      <file leaf-file-name="projects.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/projects.html">
+>>>>>>> master
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state line="20" column="28" selection-start="992" selection-end="992" vertical-scroll-proportion="0.5176471" vertical-offset="0" max-vertical-offset="1496">
+||||||| merged common ancestors
+            <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+=======
+            <state line="20" column="28" selection-start="992" selection-end="992" vertical-scroll-proportion="-14.193548" vertical-offset="0" max-vertical-offset="1496">
+>>>>>>> master
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+<<<<<<< HEAD
+      <file leaf-file-name="detail.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/detail.html">
+||||||| merged common ancestors
+      <file leaf-file-name="normalize.min.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/stylesheets/normalize.min.css">
+=======
+      <file leaf-file-name="ie10viewport.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/ie10viewport.css">
+>>>>>>> master
+          <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state line="15" column="22" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="2002">
+||||||| merged common ancestors
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+=======
+            <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="220">
               <folding />
             </state>
           </provider>
@@ -94,6 +169,7 @@
         <entry file="file://$PROJECT_DIR$/views/detail.html">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="22" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="2002">
+>>>>>>> master
               <folding />
             </state>
           </provider>
@@ -117,9 +193,17 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/views/signup.tpl" />
         <option value="$PROJECT_DIR$/views/listing.tpl" />
+||||||| merged common ancestors
+        <option value="$PROJECT_DIR$/views/behance.html" />
+        <option value="$PROJECT_DIR$/views/signin.html" />
+=======
+        <option value="$PROJECT_DIR$/views/listing.tpl" />
+>>>>>>> master
         <option value="$PROJECT_DIR$/assets/stylesheets/custom.css" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/controllers/filters.js" />
         <option value="$PROJECT_DIR$/controllers/directives.js" />
@@ -127,12 +211,34 @@
         <option value="$PROJECT_DIR$/views/detail.html" />
         <option value="$PROJECT_DIR$/views/listing.html" />
         <option value="$PROJECT_DIR$/views/main.html" />
-        <option value="$PROJECT_DIR$/index.html" />
+||||||| merged common ancestors
+=======
+        <option value="$PROJECT_DIR$/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/controllers/filters.js" />
+        <option value="$PROJECT_DIR$/controllers/directives.js" />
+        <option value="$PROJECT_DIR$/controllers/services.js" />
+        <option value="$PROJECT_DIR$/views/detail.html" />
+        <option value="$PROJECT_DIR$/views/listing.html" />
+        <option value="$PROJECT_DIR$/views/main.html" />
         <option value="$PROJECT_DIR$/controllers/appContollers.js" />
         <option value="$PROJECT_DIR$/controllers/config.js" />
         <option value="$PROJECT_DIR$/js/appContollers.js" />
         <option value="$PROJECT_DIR$/js/appConfig.js" />
         <option value="$PROJECT_DIR$/views/projects.html" />
+        <option value="$PROJECT_DIR$/assets/css/ie10viewport.css" />
+>>>>>>> master
+        <option value="$PROJECT_DIR$/index.html" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/controllers/appContollers.js" />
+        <option value="$PROJECT_DIR$/controllers/config.js" />
+        <option value="$PROJECT_DIR$/js/appContollers.js" />
+        <option value="$PROJECT_DIR$/js/appConfig.js" />
+        <option value="$PROJECT_DIR$/views/projects.html" />
+||||||| merged common ancestors
+        <option value="$PROJECT_DIR$/controllers/behance.js" />
+        <option value="$PROJECT_DIR$/views/apiProof.html" />
+=======
+>>>>>>> master
       </list>
     </option>
   </component>
@@ -186,6 +292,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
@@ -242,6 +349,83 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+||||||| merged common ancestors
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-1310-MADRID-MDD-PROJECT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+>>>>>>> master
         </subPane>
       </pane>
     </panes>
@@ -249,11 +433,19 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MDD Double Dribble" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+||||||| merged common ancestors
+=======
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MDD Double Dribble" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+>>>>>>> master
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -328,6 +520,12 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
+||||||| merged common ancestors
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286334" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> master
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -362,6 +560,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="25" column="18" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3060" />
       </provider>
     </entry>
@@ -373,6 +572,46 @@
     <entry file="file://$PROJECT_DIR$/js/directives.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.23489933" vertical-offset="0" max-vertical-offset="894" />
+||||||| merged common ancestors
+        <state line="10" column="24" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="420">
+          <folding />
+        </state>
+=======
+        <state line="25" column="18" selection-start="489" selection-end="489" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="3060" />
+>>>>>>> master
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/js/services.js">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/views/signin.html">
+=======
+    <entry file="file://$PROJECT_DIR$/js/behance.js">
+>>>>>>> master
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state line="19" column="39" selection-start="568" selection-end="568" vertical-scroll-proportion="0.31879196" vertical-offset="0" max-vertical-offset="894" />
+||||||| merged common ancestors
+        <state line="33" column="46" selection-start="846" selection-end="846" vertical-scroll-proportion="0.75609756" vertical-offset="216" max-vertical-offset="585" />
+=======
+        <state line="48" column="65" selection-start="2101" selection-end="2101" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915" />
+>>>>>>> master
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/views/apiProof.html">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/app.min.css">
+=======
+    <entry file="file://$PROJECT_DIR$/js/directives.js">
+>>>>>>> master
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state line="34" column="59" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.5862069" vertical-offset="0" max-vertical-offset="870">
+||||||| merged common ancestors
+        <state line="0" column="3" selection-start="3" selection-end="3" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+=======
+        <state line="14" column="0" selection-start="273" selection-end="273" vertical-scroll-proportion="0.23489933" vertical-offset="0" max-vertical-offset="894" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/services.js">
@@ -382,46 +621,107 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/apiProof.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="59" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.5862069" vertical-offset="0" max-vertical-offset="870">
-          <folding />
-        </state>
+        <state line="34" column="59" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.5862069" vertical-offset="0" max-vertical-offset="870" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="22" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="2002">
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/views/detail.html">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/normalize.min.css">
+=======
     <entry file="file://$PROJECT_DIR$/views/main.html">
+>>>>>>> master
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="-9.935484" vertical-offset="0" max-vertical-offset="440">
+<<<<<<< HEAD
+        <state line="15" column="22" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="2002">
+||||||| merged common ancestors
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="881">
+=======
+        <state line="14" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="0.0" vertical-offset="308" max-vertical-offset="440">
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="37" selection-start="53" selection-end="53" vertical-scroll-proportion="16.32258" vertical-offset="528" max-vertical-offset="1980">
-          <folding />
-        </state>
-      </provider>
-    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/views/main.html">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/assets/stylesheets/custom.css">
+=======
     <entry file="file://$PROJECT_DIR$/js/filters.js">
+>>>>>>> master
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state line="14" column="0" selection-start="549" selection-end="549" vertical-scroll-proportion="-9.935484" vertical-offset="0" max-vertical-offset="440">
+||||||| merged common ancestors
+        <state line="20" column="8" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+=======
         <state line="8" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/appContollers.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state line="1" column="37" selection-start="53" selection-end="53" vertical-scroll-proportion="16.32258" vertical-offset="528" max-vertical-offset="1980">
+||||||| merged common ancestors
+        <state line="44" column="20" selection-start="1307" selection-end="1482" vertical-scroll-proportion="-14.375" vertical-offset="315" max-vertical-offset="1050">
+=======
         <state line="19" column="15" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2464">
+>>>>>>> master
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/js/filters.js">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/controllers/app.js">
+=======
+    <entry file="file://$PROJECT_DIR$/js/appConfig.js">
+>>>>>>> master
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state line="8" column="0" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308">
+||||||| merged common ancestors
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="100">
+=======
+        <state line="39" column="54" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
+>>>>>>> master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/js/appContollers.js">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/controllers/behance.js">
+=======
+    <entry file="file://$PROJECT_DIR$/views/projects.html">
+>>>>>>> master
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state line="19" column="15" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2464">
+||||||| merged common ancestors
+        <state line="20" column="59" selection-start="826" selection-end="826" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="915">
+=======
+        <state line="20" column="28" selection-start="992" selection-end="992" vertical-scroll-proportion="-14.193548" vertical-offset="0" max-vertical-offset="1496">
+>>>>>>> master
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/js/appConfig.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="54" selection-start="1115" selection-end="1115" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
@@ -430,8 +730,26 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/projects.html">
+||||||| merged common ancestors
+    <entry file="file://$PROJECT_DIR$/views/apiProof.html">
+=======
+    <entry file="file://$PROJECT_DIR$/assets/css/ie10viewport.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="18" selection-start="18" selection-end="18" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="894">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+>>>>>>> master
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state line="20" column="28" selection-start="992" selection-end="992" vertical-scroll-proportion="0.5176471" vertical-offset="0" max-vertical-offset="1496">
+||||||| merged common ancestors
+        <state line="2" column="55" selection-start="142" selection-end="142" vertical-scroll-proportion="0.04037685" vertical-offset="0" max-vertical-offset="743">
+=======
+        <state line="77" column="47" selection-start="2741" selection-end="2741" vertical-scroll-proportion="0.27529413" vertical-offset="1460" max-vertical-offset="2310">
+>>>>>>> master
           <folding />
         </state>
       </provider>
