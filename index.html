@@ -10,6 +10,9 @@
         <!-- Normalize CSS -->
 		<link rel="stylesheet" href="assets/css/normalize.min.css">
 
+        <!-- IE10 Viewport Fix-->
+        <link rel="stylesheet" href="assets/css/ie10viewport.css">
+
         <!-- Foundation CSS Framework -->
         <!-- <link rel="stylesheet" href="assets/css/foundation.min.css"> -->
 		<link rel="stylesheet" href="assets/css/app.min.css">
@@ -79,6 +82,18 @@
         <script src="assets/js/foundation.min.js"></script>
         <script>
             $(document).foundation();
+
+            //viewport fix for IE10 Windows Phone 8
+            if(navigator.userAgent.match(/IEMobile\/10\.0/)){
+                var msViewportStyle = document.createElement('style');
+                msViewportStyle.appendChild(
+                  document.createTextNode(
+                          "@-ms-viewport{width:auto!important}"
+                  )
+                );
+                document.getElementsByTagName("head")[0].
+                        appendChild(msViewportStyle);
+            };
         </script>
 
 	</body>
