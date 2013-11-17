@@ -15,6 +15,23 @@ input[type="time"],
 input[type="url"]{
 	font-family: 'Lato', 'Arial', serif;
 }
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"]{
+    border-radius: 6px;
+    height: 35px;
+}
 li{
     list-style: none;
 }
@@ -133,7 +150,6 @@ i{
 
 
 /*********** PROJECT DETAILS ************/
-
 .detail{
 	max-width: 100%;
 	background: #2c3e50;
