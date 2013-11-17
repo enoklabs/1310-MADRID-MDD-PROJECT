@@ -1,51 +1,32 @@
-<div class="row" data-ng-app="BehancioApp" data-ng-controller="CoreCtrl" data-ng-init="getProjects()" ></div>
+<br/>
+        <!-- ==== SAMPLE USER CONTROLLER PULLING DATA FROM THE USERS FACTORY ==== -->
+        <div class="row" data-ng-controller="UsersController">
+            <div class="large-7 large-centered columns panel">
+                <h3>Portfolio List Creator</h3>
+                <br/>
+                <input type="text" data-ng-model="filter.name" placeholder="Filter by Name:"/>
+                <br/>
 
-<section class="listing">
+                <ul>
+                    <li data-ng-repeat="user in users | filter:filter.name | orderBy:'name'">
+                        <strong>{{ user.name }}</strong> - Behance Profile link: <a href="http://www.behance.net/{{ user.url }}" target="_blank">www.behance.net/{{ user.url }}</a>
+                    </li>
+                </ul>
 
-    <div class="row left-align">
-
-
-            <div class="large-4 large-uncentered  small-centered columns" data-ng-repeat="project in list.projects">
-                <div class="list-container shadow">
-
-                    <a href="#/detail/{{project.id}}">
-                        <div class="list-title">
-                            <h5>{{project.title}}</h5>
-                            <span>by {{project.user.name}}</span>
-                        </div>
-                        <div class="list-img">
-                            <img src="assets/images/sample.jpg"/>
-                        </div>
-                    </a>
-
-                    <div class="list-footer">
-                        <div class="row collapse">
-                            <div class="tags large-4 small-4 columns">
-                                <a href="#">{{project.tag}}</a>
-                            </div>
-                            <div class="tags large-8 small-8 columns">
-                                <ul class="right">
-                                    <li class="left"><i class="fa fa-eye"></i><span>{{project.views_count}}</span></li>
-                                    <li class="left"><i class="fa fa-heart"></i><span>{{project.likes_count}}</span></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <br/><hr/>
+                <h5>Add a new User Link to the list:</h5>
+                <br/>
+                <input type="text" data-ng-model="newUser.name" placeholder="Name"/>
+                <br/>
+                Behance.net/
+                <input type="text" data-ng-model="newUser.url" placeholder="profile url"/>
+                <br />
+                <a class="button success-dark radius" data-ng-click="addCustomer()">Add User</a>
             </div>
+        </div>
 
 
-
-    </div>
-
-</section>
-
-
-
-<br/><br/><br/><br/><br/>
-<h4 class="text-center">TEMPORARY STATIC PROJECT LISTING BELOW</h4>
-<br/><br/><br/><br/><br/>
-
+<br/><br/>
 
         <!-- ============== PORTFOLIO LISTING ================ -->
 		<section class="listing">
