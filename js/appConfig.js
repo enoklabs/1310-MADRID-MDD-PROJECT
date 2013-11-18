@@ -67,15 +67,15 @@ app.factory('behanceData', function($http, $log, $q){
         user    = 'EnokMadrid',
         apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
 
-    factory.getProjects = function(successcb){
 
-        $http({method: 'GET', url: baseURL + 'users/' + user + '/projects?api_key=' + apiKey}).
-
+    // Alternative #1 using $resource
+    factory.getProjects = function(sucesscb){
+        $http({method: 'GET', url: 'js/data/data.json'}).
             success(function(data){
-                successcb(data);
+                sucesscb(data);
                 userProjects = data;
             }).
-            error(function (data){
+            error(function(data){
                 $log.warn(data);
             });
         console.log(userProjects);
@@ -85,17 +85,38 @@ app.factory('behanceData', function($http, $log, $q){
     return factory;
 
 
-/*  Alternative $http connection using the $q service
+/*  Alternative #1 using $resource
+
+    return {
+        getProjects: function (){
+            var deferred = $q.defer();
+            $resource('/data/data/:id', {id:'@id'}).get({id:3882857})
+                .get({id:3882857},
+                function (projects){
+                    deferred.resolve(projects);
+                },
+                function (response){
+                    deferred.reject(response);
+                });
+
+            return deferred.promise;
+        }
+    };
+*/
+
+
+
+/*  Alternative #2 $http connection using the $q service
 
     return{
         get: function(){
-            var dfd = $q.defer();
+            var deferred = $q.defer();
             $http.get('http://www.behance.net/v2/users/EnokMadrid/projects?api_key=wXg9JwtvGepF60zwE9f0t20YN4TGKxYc')
                 .success(function(data){
-                   dfd.resolve(data);
+                   deferred.resolve(data);
                     console.log(data);
                 });
-            return dfd.promise;
+            return deferred.promise;
         }
     }
 */

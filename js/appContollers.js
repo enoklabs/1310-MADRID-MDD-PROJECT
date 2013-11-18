@@ -41,12 +41,20 @@ controllers.UsersController = function($scope, usersFactory){
 //controller to get behance data
 controllers.BehanceController = function($scope, behanceData){
 
-    behanceData.getProjects(function(project){
-        $scope.projects = project;
+    behanceData.getProjects(function(projects){
+        $scope.projects = projects;
     });
 
-/*
-    Alternative $http connection using the $q service
+
+/*  Alternative #1 using $resource
+        $scope.projects = behanceData.getProjects();
+        $scope.projects.then(
+            function(projects) {console.log(projects); },
+            function(response) {console.log(response); }
+        );
+
+
+    Alternative #2 $http connection using the $q service
     $scope.behanceData = behanceData.get();
 */
 

@@ -52,6 +52,7 @@ header{
 .top-bar{
     /*background: #ecf0f1;*/
     height: 62px;
+    margin-bottom: 0;
 }
 .top-bar.expanded{
     background: #34495E;
@@ -92,14 +93,49 @@ header{
 .greyLight{
     color: #ecf0f1;
 }
+.white{
+    color: #ffffff;
+}
 a{
     color: #16a085;
 }
 a:hover{
     color: #1abc9c;
 }
+.lobster{
+    font-family: 'Lobster', cursive;
+}
 
 
+/************** HOME CTA ****************/
+.cta{
+    background: url("../images/bg.jpg")no-repeat scroll 0 0 #2c3e50;
+    background-position: center;
+}
+.intro{
+    margin: 60px 0;
+}
+.intro h1{
+    font-size: 6em;
+}
+.title{
+    margin-bottom: 20px;
+}
+.github{
+    margin-top: 30px;
+}
+.github-link{
+    font-size: large;
+}
+.try-it a{
+    margin-bottom: 0;
+}
+.panel-dark{
+    padding: 40px 40px 0 40px;
+}
+.email input[type="email"]{
+    height: 50px;
+}
 /*********** PROJECT LISTING ************/
 .listing{
     background: #ecf0f1;
