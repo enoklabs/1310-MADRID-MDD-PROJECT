@@ -68,7 +68,7 @@ app.factory('behanceData', function($http){
         user    = 'EnokMadrid',
         apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
 
-    factory.myCallbackFunction = function(data) {
+    factory.myCallbackFunction = function(data){
         // returning from async callbacks is (generally) meaningless
         console.log(data);
         return data;

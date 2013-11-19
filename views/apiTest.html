@@ -3,8 +3,18 @@
 
 
 
-<!-- jsonp method of connecting -->
-<div data-ng-controller="BehanceController">
-    <button data-ng-repeat="project in projects">{{projects.id}}</button>
+<!-- jsonp method of connecting testing -->
+<div class="row" data-ng-controller="BehanceController">
+    <ul>
+        <li data-ng-repeat="project in projects">{{projects}}</li>
+    </ul>
+    <div class="large-12 large-centered">
+        <p class="text-center">Open Console</p>
+        <p class="text-center">
+            <a class="button success-dark radius" data-ng-click="myCallbackFunction()">
+                Test connection
+            </a>
+        </p>
+    </div>
 </div>
 
