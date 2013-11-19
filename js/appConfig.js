@@ -17,11 +17,11 @@ app.config(function($routeProvider){
             controller  : 'UsersController'
         })
         .when('/signin', {
-            templateUrl : 'views/signin.tpl',
+            templateUrl : 'views/signin.html',
             controller  : 'SignInCtrl'
         })
         .when('/signup', {
-            templateUrl : 'views/signup.tpl',
+            templateUrl : 'views/signup.html',
             controller  : 'SignUpCtrl'
         })
         .when('/test', {
