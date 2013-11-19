@@ -66,6 +66,10 @@ header{
 .top-bar-section ul li > a, .top-bar-section ul li > a:hover {
     height: 62px;
 }
+.form-title i{
+    font-size: 1.3em!important;
+}
+
 
 
 /*********** COLORS ************/
@@ -84,7 +88,7 @@ header{
 .blueLight{
     color: #6084a9;
 }
-.grayDark{
+.greyDark{
     color: #7f8c8d;
 }
 .greyNormal{
@@ -113,7 +117,7 @@ a:hover{
     background-position: center;
 }
 .intro{
-    margin: 60px 0;
+    margin: 60px 0 30px 0;
 }
 .intro h1{
     font-size: 6em;
@@ -131,11 +135,19 @@ a:hover{
     margin-bottom: 0;
 }
 .panel-dark{
-    padding: 40px 40px 0 40px;
+    padding: 40px 40px 30px 40px;
+    background: #ecf0f1;
+    border: 2px solid #e6ebed;
+    margin-bottom: 1.25em;
 }
 .email input[type="email"]{
     height: 50px;
 }
+.padding-reset{
+    padding: 0!important;
+}
+
+
 /*********** PROJECT LISTING ************/
 .listing{
     background: #ecf0f1;
@@ -182,7 +194,6 @@ li.left{
 i{
     color: #16a085;
 }
-
 
 
 /*********** PROJECT DETAILS ************/
@@ -248,4 +259,11 @@ i{
     padding-left: 10px;
 }
 
-/*********** PROJECT LISTING ************/
+/************** FOORTER ***************/
+
+footer{
+    background: #ecf0f1;
+}
+footer .row{
+    padding: 60px 0 30px;
+}
