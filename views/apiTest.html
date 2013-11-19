@@ -1,9 +1,10 @@
-<!-- TESTING BEHANCE API CONNECTION from BEHANCEDATA FACTORY -->
 
-<div class="row" data-ng-controller="BehanceController">
-    <h1>API TEST</h1>
-    <ul>
-        <li data-ng-repeat="project in projects">{{projects}}</li>
-    </ul>
+
+
+
+
+<!-- jsonp method of connecting -->
+<div data-ng-controller="BehanceController">
+    <button data-ng-repeat="project in projects">{{projects.id}}</button>
 </div>
 
