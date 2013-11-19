@@ -36,17 +36,23 @@ controllers.UsersController = function($scope, usersFactory){
     };
 };
 
+//JSONP example
+//myCallbacFunction with jsonp method
+
+
+
 
 
 //controller to get behance data
 controllers.BehanceController = function($scope, behanceData){
 
-    behanceData.getProjects(function(projects){
+
+     behanceData.myCallbackFunction(function(projects){
         $scope.projects = projects;
     });
 
 
-/*  Alternative #1 using $resource
+/*  //Alternative #1 using $resource
         $scope.projects = behanceData.getProjects();
         $scope.projects.then(
             function(projects) {console.log(projects); },
@@ -54,10 +60,10 @@ controllers.BehanceController = function($scope, behanceData){
         );
 
 
-    Alternative #2 $http connection using the $q service
+    //Alternative #2 $http connection using the $q service
     $scope.behanceData = behanceData.get();
-*/
 
+*/
 };
 
 

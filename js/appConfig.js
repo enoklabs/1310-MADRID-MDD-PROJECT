@@ -17,11 +17,11 @@ app.config(function($routeProvider){
             controller  : 'UsersController'
         })
         .when('/signin', {
-            templateUrl : 'views/signin.tpl',
+            templateUrl : 'views/signin.html',
             controller  : 'SignInCtrl'
         })
         .when('/signup', {
-            templateUrl : 'views/signup.tpl',
+            templateUrl : 'views/signup.html',
             controller  : 'SignUpCtrl'
         })
         .when('/test', {
@@ -58,67 +58,25 @@ app.factory('usersFactory', function(){
 
 
 
+
+
 //FACTORY for BEHANCE SERVICES
-app.factory('behanceData', function($http, $log, $q){
+app.factory('behanceData', function($http){
 
     var factory = {},
-        userProjects = [],
         baseURL = 'http://www.behance.net/v2/',
         user    = 'EnokMadrid',
         apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
 
+    factory.myCallbackFunction = function(data) {
+        // returning from async callbacks is (generally) meaningless
+        console.log(data);
+        return data;
+    }
 
-    // Alternative #1 using $resource
-    factory.getProjects = function(sucesscb){
-        $http({method: 'GET', url: 'js/data/data.json'}).
-            success(function(data){
-                sucesscb(data);
-                userProjects = data;
-            }).
-            error(function(data){
-                $log.warn(data);
-            });
-        console.log(userProjects);
-        return userProjects;
-    };
+    var url = baseURL + "users/" + user + "/projects?api_key=" + apiKey;
+    $http.jsonp(url);
 
     return factory;
-
-
-/*  Alternative #1 using $resource
-
-    return {
-        getProjects: function (){
-            var deferred = $q.defer();
-            $resource('/data/data/:id', {id:'@id'}).get({id:3882857})
-                .get({id:3882857},
-                function (projects){
-                    deferred.resolve(projects);
-                },
-                function (response){
-                    deferred.reject(response);
-                });
-
-            return deferred.promise;
-        }
-    };
-*/
-
-
-
-/*  Alternative #2 $http connection using the $q service
-
-    return{
-        get: function(){
-            var deferred = $q.defer();
-            $http.get('http://www.behance.net/v2/users/EnokMadrid/projects?api_key=wXg9JwtvGepF60zwE9f0t20YN4TGKxYc')
-                .success(function(data){
-                   deferred.resolve(data);
-                    console.log(data);
-                });
-            return deferred.promise;
-        }
-    }
-*/
 
 });
