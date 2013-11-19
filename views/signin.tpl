@@ -4,10 +4,9 @@
 		    <div class="row">
 		        <div class="large-6 large-centered columns formpadding">
 		
-		
-		
-		
-		            <h2>Sign in</h2>
+		            <h5 class="form-title greyDark">SIGN IN</h5>
+        		    <br/>
+
 		            <div>
 		                <input type="text" placeholder="email">
 		            </div>
