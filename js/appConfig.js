@@ -14,7 +14,11 @@ app.config(function($routeProvider){
         })
         .when('/projects', {
             templateUrl : 'views/projects.html',
-            controller  : 'UsersController'
+            controller  : 'UsersCtrl'
+        })
+        .when('/profile', {
+            templateUrl : 'views/profile.html',
+            controller  : 'ProfileCtrl'
         })
         .when('/signin', {
             templateUrl : 'views/signin.html',
@@ -26,7 +30,7 @@ app.config(function($routeProvider){
         })
         .when('/test', {
             templateUrl : 'views/apiTest.html',
-            controller  : 'BehanceController'
+            controller  : 'BehanceCtrl'
         })
         .otherwise({
             redirectTo  : '/'

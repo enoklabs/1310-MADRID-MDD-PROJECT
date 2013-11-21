@@ -14,7 +14,7 @@ controllers.CoreCtrl = ['$scope', function($scope, $resource, $http){
 
 
 //usersFactory is added to pull users from Factory
-controllers.UsersController = function($scope, usersFactory){
+controllers.UsersCtrl = function($scope, usersFactory){
     $scope.users = [];
 
     //initialize function
@@ -39,7 +39,7 @@ controllers.UsersController = function($scope, usersFactory){
 
 
 //controller to get behance data
-controllers.BehanceController = function($scope, behanceData){
+controllers.BehanceCtrl = function($scope, behanceData){
 
     //myCallbacFunction with jsonp method
     behanceData.myCallbackFunction(function(projects){
@@ -62,7 +62,10 @@ controllers.DetailCtrl = ['$scope', '$routeParams', function($scope, $routeParam
     $scope.projectID = $routeParams.id;
 }];
 
+//controller for Profile Page
+controllers.ProfileCtrl = ['$scope', function($scope){
 
+}];
 
 //controller for Sign In Page
 controllers.SignInCtrl = ['$scope', function($scope){

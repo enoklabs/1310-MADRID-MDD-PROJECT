@@ -32,6 +32,10 @@ input[type="url"]{
     border-radius: 6px;
     height: 35px;
 }
+textarea{
+    border-radius: 6px;
+    height: 100px;
+}
 li{
     list-style: none;
 }
@@ -259,7 +263,36 @@ i{
     padding-left: 10px;
 }
 
-/************** FOORTER ***************/
+/*********** User Profile ************/
+.profile{
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+
+}
+.gravatar{
+    background: #8aa5ba;
+    height: 180px;
+    width: 180px;
+    border: 10px solid white;
+    margin-left: 15px;
+}
+.user-icon{
+    font-size: 8em!important;
+    color: #556f88;
+    text-align: center;
+}
+.social{
+    padding: 0!important;
+    margin-bottom: 60px!important;
+}
+.about{
+    padding-bottom: 40px;
+}
+.user-settings{
+    padding-bottom: 130px;
+}
+/************** FOOTER ***************/
 
 footer{
     background: #ecf0f1;
