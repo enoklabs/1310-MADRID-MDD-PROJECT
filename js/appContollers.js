@@ -14,7 +14,7 @@ controllers.CoreCtrl = ['$scope', function($scope, $resource, $http){
 
 
 //usersFactory is added to pull users from Factory
-controllers.UsersController = function($scope, usersFactory){
+controllers.UsersCtrl = function($scope, usersFactory){
     $scope.users = [];
 
     //initialize function
@@ -36,34 +36,15 @@ controllers.UsersController = function($scope, usersFactory){
     };
 };
 
-//JSONP example
-//myCallbacFunction with jsonp method
-
-
-
 
 
 //controller to get behance data
-controllers.BehanceController = function($scope, behanceData){
+controllers.BehanceCtrl = function($scope, behanceData){
 
-
-     behanceData.myCallbackFunction(function(projects){
+    //myCallbacFunction with jsonp method
+    behanceData.myCallbackFunction(function(projects){
         $scope.projects = projects;
     });
-
-
-/*  //Alternative #1 using $resource
-        $scope.projects = behanceData.getProjects();
-        $scope.projects.then(
-            function(projects) {console.log(projects); },
-            function(response) {console.log(response); }
-        );
-
-
-    //Alternative #2 $http connection using the $q service
-    $scope.behanceData = behanceData.get();
-
-*/
 };
 
 
@@ -81,7 +62,10 @@ controllers.DetailCtrl = ['$scope', '$routeParams', function($scope, $routeParam
     $scope.projectID = $routeParams.id;
 }];
 
+//controller for Profile Page
+controllers.ProfileCtrl = ['$scope', function($scope){
 
+}];
 
 //controller for Sign In Page
 controllers.SignInCtrl = ['$scope', function($scope){
