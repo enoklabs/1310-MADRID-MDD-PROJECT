@@ -198,6 +198,9 @@ li.left{
 i{
     color: #16a085;
 }
+.list-img > img {
+    width: 100%;
+}s
 
 
 /*********** PROJECT DETAILS ************/
