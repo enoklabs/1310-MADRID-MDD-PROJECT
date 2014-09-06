@@ -22,7 +22,7 @@ services.factory('AppCore', function ($http) {
              return load("/listing/" + type, params)
            }
   }
-})
+});
 
 services.factory('PagedResult', function (behancio) {
   return function PagedResult (method, arg, collection_name) {
@@ -36,10 +36,10 @@ services.factory('PagedResult', function (behancio) {
         self.pages = data.data.pages;
         self.per_page = data.data.per_page;
         [].push.apply(collection, data.data[collection_name])
-      })
+      });
 
       return this;
     }
   }
 
-})
+});

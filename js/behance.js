@@ -37,7 +37,7 @@
             //handle error
             d.innerHTML = "<div class='behance_main'><p>Sorry, we couldn't load the Behance feed.</p></div>";
         }
-    }
+    };
 
     if (!BEHANCE_USER) return;
 

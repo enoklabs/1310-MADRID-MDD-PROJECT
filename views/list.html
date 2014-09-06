@@ -1,0 +1,83 @@
+
+        <!-- ==== SAMPLE USER CONTROLLER PULLING DATA FROM THE USERS FACTORY ==== -->
+        <div class="hide-for-small" data-ng-controller="UsersCtrl">
+            <div>
+
+                <div class="row">
+                    <h3 class="large-8 left columns">Portfolio List Creator</h3>
+                    <br/>
+                    <div class="large-4 right columns">
+                        <i class="fa fa-search inline-list left" style="margin-top:9px;"></i>
+                        <input class="left" type="text" data-ng-model="filter.name" placeholder="Filter by Name"/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-3 columns"
+                         data-ng-repeat="user in users | filter:filter.name | orderBy:'name'">
+                        <div class="panel">
+                            <strong>{{ user.name }}</strong>
+                            <a href="http://www.behance.net/{{ user.url }}" target="_blank">behance.net/{{ user.url }}</a>
+                        </div>
+                    </div>
+                </div>
+
+                <br><br>
+
+                <form class="row">
+                    <h3 class="large-12 columns"><small>Add a new User Link to the list:</small></h3><br>
+
+                    <div class="large-5 columns">
+                        <label class="left">User Name</label>
+                        <input  type="text" data-ng-model="newUser.name" placeholder="Name"/>
+
+                    </div>
+
+                    <div class="large-5 columns">
+                        <label class="left">Behance.net/</label>
+                        <input type="text" data-ng-model="newUser.url" placeholder="profile url"/>
+
+                    </div>
+                    <div class="large-2 columns">
+                        <a class="button success-dark small radius" data-ng-click="addUser()" style="margin-top:18px;">Add User</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+        <!-- ============== PORTFOLIO LISTING ================ -->
+		<section class="listing" data-ng-controller="BehanceCtrl">
+            <div class="row left-align">
+
+                <div class="large-4 large-uncentered  small-centered columns" data-ng-repeat="project in behance.projects">
+                    <div class="list-container shadow">
+
+                        <a href="{{ project.url }}">
+                            <div class="list-title">
+                                <h5>{{ project.name }}</h5>
+                                <span>by {{ project.owners[0].first_name }} {{ project.owners[0].last_name}}</span>
+                            </div>
+                            <div class="list-img">
+                                <img src="{{ project.covers.404 }}"/>
+                            </div>
+                        </a>
+                        <div class="list-footer">
+                            <div class="row collapse">
+                                <div class="tags large-4 small-4 columns">
+                                    <a href="#">{{ project.fields[0]}}</a>
+                                </div>
+                                <div class="tags large-8 small-8 columns">
+                                    <ul class="right">
+                                        <li class="left"><i class="fa fa-eye"></i><span>{{ project.stats.views }}</span></li>
+                                        <li class="left"><i class="fa fa-heart"></i><span>{{ project.stats.appreciations }}</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+		</section>
