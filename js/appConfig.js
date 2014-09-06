@@ -12,8 +12,8 @@ app.config(function($routeProvider){
             templateUrl : 'views/detail.html',
             controller  : 'DetailCtrl'
         })
-        .when('/projects', {
-            templateUrl : 'views/projects.html',
+        .when('/list', {
+            templateUrl : 'views/list.html',
             controller  : 'UsersCtrl'
         })
         .when('/profile', {
@@ -28,8 +28,8 @@ app.config(function($routeProvider){
             templateUrl : 'views/signup.html',
             controller  : 'SignUpCtrl'
         })
-        .when('/test', {
-            templateUrl : 'views/apiTest.html',
+        .when('/projects', {
+            templateUrl : 'views/portfolios.html',
             controller  : 'BehanceCtrl'
         })
         .otherwise({
@@ -46,7 +46,12 @@ app.factory('usersFactory', function(){
         {name: 'Enok Madrid'     , url: 'EnokMadrid'},
         {name: 'Josh Rossi'      , url: 'joshrossi'},
         {name: 'Hubert Paderski' , url: 'creativehead'},
-        {name: 'Devin Schoeffler', url: 'nautilus-d' }
+        {name: 'Devin Schoeffler', url: 'nautilus-d' },
+        {name: 'Gregory Barbot'  , url: 'webs1' },
+        {name: 'Sergey Azovskiy' , url: 'flexrs' },
+        {name: 'Graphic Maniac'  , url: 'callmeoriginal' },
+        {name: 'Degordian'       , url: 'degordian' }
+
     ];
 
     factory.getUsers = function(){
@@ -62,25 +67,24 @@ app.factory('usersFactory', function(){
 
 
 
-
-
 //FACTORY for BEHANCE SERVICES
-app.factory('behanceData', function($http){
+app.factory('behanceData', function($http) {
 
-    var factory = {},
-        baseURL = 'http://www.behance.net/v2/',
-        user    = 'EnokMadrid',
-        apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
+    var factory = {
 
-    factory.myCallbackFunction = function(data){
-        // returning from async callbacks is (generally) meaningless
-        console.log(data);
-        return data;
-    }
-
-    var url = baseURL + "users/" + user + "/projects?api_key=" + apiKey;
-    $http.jsonp(url);
-
+        async: function(page) {
+            var user    = 'enokmadrid';
+            var apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
+            var url     = 'http://behance.net/v2/users/'+ user +'/projects?api_key='+ apiKey +'&callback=JSON_CALLBACK';
+            var promise = $http.jsonp(url).error(function (response, status) {
+                alert(status);
+            }).success(function (response, status) {
+                //Success
+            }).then(function (response, status) {
+                return response.data;
+            });
+            return promise;
+        }};
     return factory;
 
 });

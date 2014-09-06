@@ -7,10 +7,7 @@ controllers.CoreCtrl = ['$scope', function($scope, $resource, $http){
     $scope.baseURL = 'http://www.behance.net/v2/';
     $scope.user    = 'enokmadrid';
     $scope.apiKey  = 'wXg9JwtvGepF60zwE9f0t20YN4TGKxYc';
-
-/*console.log($http.jsonp($scope.baseURL + 'users/' + $scope.user + '/projects?api_key=' + $scope.apiKey + '&callback=?'));*/
 }];
-
 
 
 //usersFactory is added to pull users from Factory
@@ -42,19 +39,8 @@ controllers.UsersCtrl = function($scope, usersFactory){
 controllers.BehanceCtrl = function($scope, behanceData){
 
     //myCallbacFunction with jsonp method
-    behanceData.myCallbackFunction(function(projects){
-        $scope.projects = projects;
-    });
+    $scope.behance = behanceData.async();
 };
-
-
-
-//controller for Projects Listing Page
-controllers.ProjectsCtrl = function($scope, PagedResult, $routeParams){
-    var list = $routeParams.list;
-    $scope.list = $routeParams.list;
-};
-
 
 
 //controller for Detail Page
@@ -71,7 +57,6 @@ controllers.ProfileCtrl = ['$scope', function($scope){
 controllers.SignInCtrl = ['$scope', function($scope){
 
 }];
-
 
 
 //controller for Sign Up Page
